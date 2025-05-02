@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laszlo Majsai Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logocolor.png">
 </head>
 
@@ -26,7 +28,7 @@
         </div>
     </nav>
     <header>
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
             <h1>Hi, there!</h1>
             <p>My name is Laszlo Majsai. Welcome to my portfolio website!</p>
             <div class="icons">
@@ -37,7 +39,7 @@
         <img src="img/profkep.jpg" id="profile" alt="ProfilePic">
     </header>
     <main>
-        <div class="aboutme" id="aboutme">
+        <div data-aos="fade-up" data-aos-duration="1000" class="aboutme" id="aboutme">
             <h3>ABOUT ME</h3>
             <div>
                 <p>I am 26 years old and I graduated as an industrial design engineer at Óbuda University Rejtő
@@ -53,10 +55,10 @@
                     developing technology.</p>
             </div>
         </div>
-        <div class="background" id="backgr">
+        <div data-aos="fade-up" data-aos-duration="1000" class="background" id="backgr">
             <img src="img/background.png" id="background" alt="Background">
         </div>
-        <div class="content" id="content">
+        <div data-aos="fade-up" data-aos-duration="1000" class="content" id="content">
             <h3>PROJECTS</h3>
             <nav>
                 <div class="contentimage">
@@ -82,7 +84,7 @@
             </nav>
         </div>
         <div class="projecttable" id="projecttable">
-            <table>
+            <table data-aos="fade-up" data-aos-duration="1000">
                 <thead>
                     <tr>
                         <th>Project</th>
@@ -131,7 +133,7 @@
                 </tbody>
             </table>
         </div>
-        <section id="excercise">
+        <section data-aos="fade-left" data-aos-duration="1000" id="excercise">
             <div class="projectimg">
                 <h2>Product design Excercise</h2>
                 <p>For this assignment we were given a phenomena of nature which inspires us to design some kind of
@@ -150,7 +152,7 @@
             </div>
             <img src="img/display.png" alt="Excercise">
         </section>
-        <section id="map">
+        <section data-aos="fade-right" data-aos-duration="1000" id="map">
             <img src="img/interactivemap.png" alt="Map">
             <div class="projectimg">
                 <h2>Interactive Map</h2>
@@ -166,7 +168,7 @@
                 </nav>
             </div>
         </section>
-        <section id="data">
+        <section data-aos="fade-left" data-aos-duration="1000" id="data">
             <div class="projectimg">
                 <h2>Data Visualization</h2>
                 <p>This project was made for a one week long course at my university. In this programme, we studied
@@ -181,7 +183,7 @@
             </div>
             <img src="img/dataviz.png" alt="Data">
         </section>
-        <section id="smoke">
+        <section data-aos="fade-right" data-aos-duration="1000" id="smoke">
             <img src="img/smoke.png" alt="Smoke">
             <div class="projectimg">
                 <h2>Smoke Quitting App</h2>
@@ -198,7 +200,7 @@
                 </nav>
             </div>
         </section>
-        <section id="news">
+        <section data-aos="fade-left" data-aos-duration="1000" id="news">
             <div class="projectimg">
                 <h2>Newsplatform App</h2>
                 <p>This was our biggest project during last semester. We were given four issues, that are common in
@@ -215,8 +217,8 @@
             <img src="img/news.png" alt="News">
         </section>
         <section id="contact">
-            <h3>CONTACT</h3>
-            <nav>
+            <h3 data-aos="fade-up" data-aos-duration="1000">CONTACT</h3>
+            <nav data-aos="fade-up" data-aos-duration="1000">
                 <a href="form.html" class="formlink">
                     <div class="formbutton">Contact Me!</div>
                 </a>
@@ -235,4 +237,8 @@
         const navLinks = document.querySelector('.nav-links');
         navLinks.classList.toggle('active');
     }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
