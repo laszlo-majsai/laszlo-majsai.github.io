@@ -4,48 +4,56 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" type="image/png" href="img/logocolor.png">
 </head>
 
 <body>
     <header>
         <h1>Contact Me</h1>
-        <p>Get in touch easily!</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Back to Home</a></li>
-            </ul>
-        </nav>
+        <h2>Get in touch easily!</h2>
     </header>
     <main>
         <section>
             <form action="#" method="get">
-                <p>Fill out the form</p>
-                <label>
-                    First Name:
-                    <input type="text" name="firstname" placeholder="Your First Name" required>
-                </label>
-                <label>
-                    Last Name:
-                    <input type="text" name="lastname" placeholder="Your Last Name" required>
-                </label>
-                <label>
-                    Email:
-                    <input type="email" name="email_adress" placeholder="Your E-mail" required>
-                </label>
-                <label>
-                    How can I help you?
-                    <select>
-                        <option value="empty"></option>
-                        <option value="job">Job Offer</option>
-                        <option value="position">Invitation for an Interview</option>
-                        <option value="advice">Design Advice</option>
-                    </select>
-                </label>
-                <label>
+                <h2>Fill out the form:</h2>
+                <div class="name">
+                    <label class="firstname">
+                        First Name:
+                        <input class="firstnameinput" type="text" name="firstname" placeholder="Your First Name"
+                            required>
+                    </label>
+                    <label class="lastname">
+                        Last Name:
+                        <input class="lastnameinput" type="text" name="lastname" placeholder="Your Last Name" required>
+                    </label>
+                </div>
+                <div class="emailhelp">
+                    <label class="email">
+                        Email:
+                        <input class="emailinput" type="email" name="email_adress" placeholder="Your E-mail" required>
+                    </label>
+                    <label class="help">
+                        How can I help you?
+                        <select>
+                            <option value="empty"></option>
+                            <option value="job">Job Offer</option>
+                            <option value="position">Invitation for an Interview</option>
+                            <option value="advice">Design Advice</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="more">
                     Tell me more about your intentions!
-                    <textarea name="message" placeholder="Message" cols="40" rows="20" required></textarea>
+                    <textarea class="moretext" name="message" placeholder="Message..." cols="40" rows="40"
+                        required></textarea>
                 </label>
-                <input type="submit" value="Send Form">
+                <div class="buttons">
+                    <nav>
+                        <a href="index.html">Back to Home</a>
+                    </nav>
+                    <input class="send" type="submit" value="Send Form">
+                </div>
             </form>
         </section>
     </main>
