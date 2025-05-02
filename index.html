@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laszlo Majsai Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logocolor.png">
@@ -11,8 +12,13 @@
 <body>
     <nav class="fixed-nav">
         <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <img src="img/logocolorfull.png" id="logo" alt="logo">
             <ul class="nav-links">
-                <li><img src="img/logocolorfull.png" id="logo" alt="logo"></li>
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#content">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -223,3 +229,10 @@
 </body>
 
 </html>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
