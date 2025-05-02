@@ -213,7 +213,7 @@ a:hover {
 table,
 th,
 td {
-    border: 0.5px solid #E6BE8A;
+    border: 0.5px solid black;
     border-collapse: collapse;
 }
 
@@ -221,7 +221,8 @@ thead {
     font-size: 12pt;
     text-transform: uppercase;
     vertical-align: top;
-    background-color: black;
+    background-color: #E6BE8A;
+    color: #232323;
 }
 
 tbody {
