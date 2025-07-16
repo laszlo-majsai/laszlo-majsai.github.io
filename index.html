@@ -24,7 +24,15 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#backgr">Background</a></li>
-                <li><a href="#content">Projects</a></li>
+                <li class="dropdown">
+                    <a href="#project" class="dropbtn">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#project20">2020-2022</a></li>
+                        <li><a href="#project24">2024</a></li>
+                        <li><a href="#project25">2025</a></li>
+                    </ul>
+                </li>
+                <span class="nav-underline"></span>
             </ul>
         </div>
     </nav>
@@ -37,7 +45,10 @@
                 <img src="img/UXD.png" alt="">
             </div>
         </div>
-        <img src="img/profile.svg" id="profile" alt="ProfilePic">
+        <img src="img/profile.svg" id="profile" alt="ProfilePic" data-aos="fade-right" data-aos-duration="1000">
+        <div class="scroll-down-indicator" id="scrollDown">
+            <img src="img/scroll.png" alt="scroll">
+        </div>
     </header>
     <main>
         <div data-aos="fade-up" data-aos-duration="1000" class="aboutme" id="aboutme">
@@ -71,7 +82,7 @@
             </nav>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project">
-            <h3>PROJECTS</h3>
+            <h3 id="project20">PROJECTS</h3>
             <div class="year">
                 <div class="line"></div>
                 <h6>2020-2022</h6>
@@ -107,8 +118,8 @@
                     </a>
                 </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project">
-            <div class="year">
+        <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project24">
+            <div class="year" id="2024">
                 <div class="line"></div>
                 <h6>2024</h6>
                 <div class="line"></div>
@@ -143,7 +154,7 @@
                     </a>
                 </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project">
+        <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project25">
             <div class="year">
                 <div class="line"></div>
                 <h6>2025</h6>
@@ -180,31 +191,6 @@
                 </div>
         </div>
         </nav>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="content" id="content">
-            <h3>PROJECTS</h3>
-            <nav>
-                <div class="contentimage">
-                    <a href="#excercise"><img src="img/display_card.png" alt="Display"></a>
-                    <a href="#excercise">Product Design Excercise</a>
-                </div>
-                <div class="contentimage">
-                    <a href="#map"><img src="img/interactivemap_card.png" alt="Map"></a>
-                    <a href="#map">Interactive Map</a>
-                </div>
-                <div class="contentimage">
-                    <a href="#data"><img src="img/dataviz_card.png" alt="Data"></a>
-                    <a href="#data">Data Visualization</a>
-                </div>
-                <div class="contentimage">
-                    <a href="#smoke"><img src="img/smoke_card.png" alt="Smoke"></a>
-                    <a href="#smoke">Smoke Quitting App</a>
-                </div>
-                <div class="contentimage">
-                    <a href="#news"><img src="img/news_card.png" alt="News"></a>
-                    <a href="#news">Newsportal App</a>
-                </div>
-            </nav>
         </div>
         <div class="projecttable" id="projecttable">
             <table data-aos="fade-up" data-aos-duration="1000">
@@ -256,97 +242,6 @@
                 </tbody>
             </table>
         </div>
-        <section data-aos="fade-left" data-aos-duration="1000" id="excercise">
-            <div class="projectimg">
-                <h2>Product design Excercise</h2>
-                <p>For this assignment we were given a phenomena of nature which inspires us to design some kind of
-                    display. Mine was
-                    water. At first we had to make sketches and start looking for different shapes that can be
-                    developed to a concept of a product. Then we had to make 5 rough design based on
-                    those sketches. We had to develop one of those to a finished concept.
-                    I ended up with this raindrop inspired minimalistic display,
-                    which can be hanged in a living room and put some plants,
-                    photos or other decorative items in it.</p>
-                <nav>
-                    <a href="" class="more">
-                        <div class="morebutton">More ></div>
-                    </a>
-                </nav>
-            </div>
-            <img src="img/display.png" alt="Excercise">
-        </section>
-        <section data-aos="fade-right" data-aos-duration="1000" id="map">
-            <img src="img/interactivemap.png" alt="Map">
-            <div class="projectimg">
-                <h2>Interactive Map</h2>
-                <p>This was the main project during my Erasmus semester in the Netherlands. I was in a group of
-                    three, and our project was to design a tool or a system for the university’s new building, which
-                    gathering, storing and displaying sensor
-                    data. The building was made as a hybrid learning environment, where students are working on
-                    projects together using innovative technologies.</p>
-                <nav>
-                    <a href="" class="more">
-                        <div class="morebutton">More ></div>
-                    </a>
-                </nav>
-            </div>
-        </section>
-        <section data-aos="fade-left" data-aos-duration="1000" id="data">
-            <div class="projectimg">
-                <h2>Data Visualization</h2>
-                <p>This project was made for a one week long course at my university. In this programme, we studied
-                    the latest and most experimental methods of data visualization. At the end of the week, we had
-                    to present our own concept. We were allowed to use any source of data, and any form of
-                    visualization.</p>
-                <nav>
-                    <a href="" class="more">
-                        <div class="morebutton">More ></div>
-                    </a>
-                </nav>
-            </div>
-            <img src="img/dataviz.png" alt="Data">
-        </section>
-        <section data-aos="fade-right" data-aos-duration="1000" id="smoke">
-            <img src="img/smoke.png" alt="Smoke">
-            <div class="projectimg">
-                <h2>Smoke Quitting App</h2>
-                <p>This concept is made for a course called “Designing positive technology tools”. The goal of the
-                    class was to choose a mental health issue and design an app or any digital platform, that can
-                    help people deal with it. We have chosen addiction. After several brainstormings, we decided to
-                    create an app that helps people quit smoking. It is a concept, that has many already implemented
-                    examples for, but we made our own approach to it, that differs from other similar items on the
-                    market.</p>
-                <nav>
-                    <a href="" class="more">
-                        <div class="morebutton">More ></div>
-                    </a>
-                </nav>
-            </div>
-        </section>
-        <section data-aos="fade-left" data-aos-duration="1000" id="news">
-            <div class="projectimg">
-                <h2>Newsplatform App</h2>
-                <p>This was our biggest project during last semester. We were given four issues, that are common in
-                    the rural area of Hungary, and we had to make a concept of a digital tool, that can help solving
-                    it. I chose misinformation for my intervention area. I started to investigate, how I, as a
-                    designer can help to improve access to reliable information in rural communities to combat fake
-                    and biased news sources and strengthen civic participation.</p>
-                <nav>
-                    <a href="" class="more">
-                        <div class="morebutton">More ></div>
-                    </a>
-                </nav>
-            </div>
-            <img src="img/news.png" alt="News">
-        </section>
-        <section id="contact">
-            <h3 data-aos="fade-up" data-aos-duration="1000">CONTACT</h3>
-            <nav data-aos="fade-up" data-aos-duration="1000">
-                <a href="form.html" class="formlink">
-                    <div class="formbutton">Contact Me!</div>
-                </a>
-            </nav>
-        </section>
     </main>
     <footer>
         <p>@2025 Majsai László. All rights reserved.</p>
@@ -364,4 +259,66 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    const scrollIndicator = document.getElementById('scrollDown');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            scrollIndicator.style.display = 'none';
+        } else {
+            scrollIndicator.style.display = 'block';
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('main > div[id], header[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const underline = document.querySelector('.nav-underline');
+        const dropdownParent = document.querySelector('.dropbtn'); // "Projects" főmenüpont
+
+        function updateUnderline(link) {
+            if (!link) {
+                underline.style.width = '0';
+                return;
+            }
+            const linkRect = link.getBoundingClientRect();
+            const navRect = link.closest('.nav-links').getBoundingClientRect();
+
+            underline.style.left = (linkRect.left - navRect.left) + 'px';
+            underline.style.width = linkRect.width + 'px';
+        }
+
+        function onScroll() {
+            let currentSectionId = '';
+            const scrollPosition = window.pageYOffset + 150;
+
+            sections.forEach(section => {
+                if (section.offsetTop <= scrollPosition) {
+                    currentSectionId = section.id;
+                }
+            });
+
+            let activeLink = null;
+
+            // Ha 2020–2025-ös projektek közül vagyunk valahol, akkor a "Projects" link alatt legyen a vonal
+            if (['project20', 'project24', 'project25'].includes(currentSectionId)) {
+                activeLink = dropdownParent;
+            } else {
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === '#' + currentSectionId) {
+                        activeLink = link;
+                    }
+                });
+            }
+
+            updateUnderline(activeLink);
+        }
+
+        onScroll();
+
+        window.addEventListener('scroll', onScroll);
+        window.addEventListener('resize', onScroll);
+    });
 </script>
