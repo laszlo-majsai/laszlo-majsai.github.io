@@ -17,7 +17,6 @@
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
-                <div class="bar"></div>
             </div>
             <img src="img/logocolorfull.png" id="logo" alt="logo">
             <ul class="nav-links">
@@ -319,5 +318,16 @@
 
         window.addEventListener('scroll', onScroll);
         window.addEventListener('resize', onScroll);
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
     });
 </script>
