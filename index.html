@@ -45,7 +45,7 @@
                 <img src="img/UXD.png" alt="">
             </div>
         </div>
-        <img src="img/profile.svg" id="profile" alt="ProfilePic" data-aos="fade-right" data-aos-duration="1000">
+        <img src="img/profile.png" id="profile" alt="ProfilePic" data-aos="fade-right" data-aos-duration="1000">
         <div class="scroll-down-indicator" id="scrollDown">
             <img src="img/scroll.png" alt="scroll">
         </div>
@@ -276,7 +276,7 @@
         const sections = document.querySelectorAll('main > div[id], header[id]');
         const navLinks = document.querySelectorAll('.nav-links a');
         const underline = document.querySelector('.nav-underline');
-        const dropdownParent = document.querySelector('.dropbtn'); // "Projects" főmenüpont
+        const dropdownParent = document.querySelector('.dropbtn');
 
         function updateUnderline(link) {
             if (!link) {
@@ -302,7 +302,6 @@
 
             let activeLink = null;
 
-            // Ha 2020–2025-ös projektek közül vagyunk valahol, akkor a "Projects" link alatt legyen a vonal
             if (['project20', 'project24', 'project25'].includes(currentSectionId)) {
                 activeLink = dropdownParent;
             } else {
