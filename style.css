@@ -64,6 +64,7 @@
     background-color: #E6BE8A;
     transition: all 0.3s ease;
     width: 0;
+    pointer-events: none;
 }
 
 .nav-links a.active {
@@ -78,6 +79,7 @@
     cursor: pointer;
     text-decoration: none;
 }
+
 
 .dropdown-content {
     position: absolute;
@@ -293,10 +295,14 @@ header p {
     }
 }
 
+#aboutme {
+    scroll-margin-top: 120px;
+}
+
 .aboutme {
+    padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,9 +320,9 @@ header p {
 }
 
 .background {
+    padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,6 +331,10 @@ header p {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 50%;
+}
+
+#backgr {
+    scroll-margin-top: 120px;
 }
 
 #background {
@@ -362,8 +372,19 @@ header p {
     background-color: whitesmoke;
 }
 
+
+#project {
+    scroll-margin-top: 120px;
+}
+
+#project20,
+#project24,
+#project25 {
+    scroll-margin-top: 160px;
+}
+
 .project {
-    padding-top: 140px;
+    padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
     display: flex;
@@ -522,7 +543,6 @@ td {
         padding-right: 5vw;
     }
 
-
     .fixed-nav {
         background-color: #232323;
     }
@@ -535,6 +555,7 @@ td {
 
     .nav-underline {
         display: none;
+        pointer-events: none;
     }
 
     .nav-links {
@@ -554,6 +575,7 @@ td {
     .nav-links.show {
         display: flex;
         align-items: center;
+        overflow: visible;
     }
 
     .hamburger {
@@ -612,6 +634,11 @@ td {
     }
 
     .dropdown-content {
+        display: none;
+        max-height: none !important;
+    }
+
+    .dropdown-content.show {
         position: static;
         width: 100%;
         background-color: #232323;
@@ -622,15 +649,16 @@ td {
         align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
+        overflow: visible;
     }
 
-    .dropdown-content li {
+    .dropdown-content.show li {
         width: 100%;
         text-align: center;
         padding: 0;
     }
 
-    .dropdown-content li a {
+    .dropdown-content.show li a {
         display: block;
         width: 100%;
         color: #E6BE8A;
@@ -704,7 +732,6 @@ td {
         height: auto;
         background-size: 100%;
         background-position: top;
-        padding-top: 80px;
     }
 
     .aboutme p {
@@ -713,7 +740,7 @@ td {
     }
 
     .background {
-        background-size: 80%;
+        background-size: 100%;
     }
 
     #background {
