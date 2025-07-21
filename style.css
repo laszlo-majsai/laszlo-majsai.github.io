@@ -10,10 +10,12 @@
     z-index: 10;
     text-align: center;
     width: 100%;
-    background-color: #232323;
+    background-color: rgb(35, 35, 35, 0.95);
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -79,14 +81,17 @@
 
 .dropdown-content {
     position: absolute;
-    background-color: #232323;
-    width: 160px;
+    background-color: rgb(35, 35, 35, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 180px;
     z-index: 1;
     text-align: left;
     font-size: 12pt;
     left: 0;
+    top: 52px;
     right: auto;
-    padding-top: 24px;
+    padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 0;
     margin: 0;
@@ -289,7 +294,6 @@ header p {
 }
 
 .aboutme {
-    height: 730px;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 140px;
@@ -372,8 +376,17 @@ header p {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projectboxbig {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -381,7 +394,7 @@ header p {
 .projectbox {
     background-color: #232323;
     width: 260px;
-    height: 380px;
+    max-height: 380px;
     box-sizing: border-box;
     display: flex;
 }
@@ -394,6 +407,7 @@ header p {
     text-decoration: none;
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .projectbox img {
@@ -409,7 +423,7 @@ header p {
 }
 
 .year {
-    height: 40px;
+    max-height: 40px;
     padding-right: 120px;
     padding-left: 120px;
     padding-bottom: 60px;
@@ -429,7 +443,25 @@ header p {
     box-sizing: border-box;
 }
 
-.projecttable {
+footer {
+    height: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url("img/backgroundvisual3.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* .projecttable {
     height: 440px;
     padding-left: 100px;
     padding-right: 100px;
@@ -469,37 +501,8 @@ td {
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-}
+} */
 
-footer {
-    height: 200px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 80px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    background-image: url("img/backgroundvisual3.png");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 75%;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-end;
-    cursor: pointer;
-    z-index: 11;
-}
-
-.bar {
-    height: 4px;
-    width: 36px;
-    background-color: #E6BE8A;
-    margin: 4px 0px;
-    transition: 0.4s;
-}
 
 @media screen and (max-width: 1024px) {
     * {
@@ -513,9 +516,21 @@ footer {
     .background,
     .project,
     .projecttable,
+    .year,
     footer {
         padding-left: 5vw;
         padding-right: 5vw;
+    }
+
+
+    .fixed-nav {
+        background-color: #232323;
+    }
+
+    .nav-container {
+        flex-direction: row-reverse;
+        padding: 0;
+        width: 100vw;
     }
 
     .nav-underline {
@@ -527,42 +542,107 @@ footer {
         flex-direction: column;
         background-color: #232323;
         position: absolute;
-        top: 60px;
+        top: 40px;
         left: 0;
         right: 0;
-        padding: 12px 0;
+        padding-left: 0;
+        padding-bottom: 20px;
         z-index: 9;
+        font-size: 16pt;
     }
 
     .nav-links.show {
         display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
+        align-items: center;
     }
 
     .hamburger {
+        width: 36px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        z-index: 11;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bar {
+        position: absolute;
+        width: 36px;
+        height: 4px;
+        background-color: #E6BE8A;
+        transition: all 0.3s ease;
+    }
+
+
+    .nav-links li {
+        margin: 20px 0 20px;
+    }
+
+    .bar:nth-child(1) {
+        top: 0;
+    }
+
+    .bar:nth-child(2) {
+        top: 13px;
+    }
+
+    .bar:nth-child(3) {
+        top: 26px;
     }
 
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg);
-        position: absolute;
+        top: 13px;
     }
 
     .hamburger.active .bar:nth-child(2) {
-        transform: rotate(-45deg);
-        position: absolute;
+        opacity: 0;
     }
 
-    .bar {
-        transition: all 0.3s ease;
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 13px;
     }
 
     .scroll-down-indicator {
         display: none;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        background-color: #232323;
+        max-height: none;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dropdown-content li {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .dropdown-content li a {
+        display: block;
+        width: 100%;
+        color: #E6BE8A;
+        text-align: center;
+        font-size: 12pt;
+        text-align: center;
+        padding: 0;
+    }
+
+    .dropbtn {
+        width: 100%;
+        text-align: center;
     }
 
     h1 {
@@ -576,7 +656,7 @@ footer {
 
     h3 {
         font-size: 32pt;
-        line-height: 20%;
+        line-height: 60%;
     }
 
     h6 {
@@ -650,26 +730,17 @@ footer {
         box-sizing: border-box;
     }
 
-    /*     .projectbox {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        margin-bottom: 40px;
-        flex-direction: column;
-    }
-
-    .project nav {
-        flex-direction: column;
-        align-items: center;
-    } */
-
     .year {
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
     }
 
-    .projecttable {
+    footer {
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    /*     .projecttable {
         padding-left: 5vw;
         padding-right: 5vw;
         height: auto;
@@ -679,13 +750,5 @@ footer {
     table {
         width: 100%;
     }
-
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        padding-bottom: 40px;
-    }
+ */
 }
