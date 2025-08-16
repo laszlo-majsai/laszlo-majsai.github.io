@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Design Excercise - Laszlo Majsai Portfolio</title>
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logocolor.png">
+</head>
+
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <img src="img/logocolorfull.png" id="logo" alt="logo">
+        </div>
+    </nav>
+    <header>
+        <div data-aos="fade-right" data-aos-duration="1000" class="intro">
+            <h1>Product Design Excercise</h1>
+            <img src="img/display1.png" class="display1" alt="Display1" data-aos="fade-right" data-aos-duration="1000">
+        </div>
+        <div class="projecttable">
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <thead>
+                    <tr>
+                        <th>Year of Creation</th>
+                        <th>Mentors</th>
+                        <th>Teammates</th>
+                        <th>Institution</th>
+                        <th>Toolkit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>Lóránt Fododr DLA</td>
+                        <td>-</td>
+                        <td>Óbuda University</td>
+                        <td>Sketching on paper,
+                            Solid Egde,
+                            Keyshot</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="scroll-down-indicator" id="scrollDown">
+            <img src="img/scroll.png" alt="scroll">
+        </div>
+    </header>
+    <main>
+        <div class="theproject" data-aos="fade-up" data-aos-duration="1000">
+            <div class="projecttext">
+                <h2>The Project</h2>
+                <p>For this assignment we were given a phenomena of nature
+                    which inspires us to design some kind of display. Mine was
+                    water. At first we had to make sketches and start looking
+                    for different shapes that can be developed to a concept of
+                    a product. Then we had to make 5 rough design based on
+                    those sketches. We had to develop one of those to a finished
+                    concept.</p>
+            </div>
+            <img src="img/display2.png" class="display2" alt="Display2">
+        </div>
+        <div class="theresult" data-aos="fade-left" data-aos-duration="1000">
+            <div class="resulttext">
+                <h2>The Result</h2>
+                <p>I ended up with this raindrop inspired minimalistic display,
+                    which can be hanged in a living room and put some plants,
+                    photos or other decorative items in it.</p>
+            </div>
+            <img src="img/display3.png" class="display3" alt="Display3">
+        </div>
+    </main>
+    <footer>
+        <p>@2025 Majsai László. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    const scrollIndicator = document.getElementById('scrollDown');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            scrollIndicator.style.display = 'none';
+        } else {
+            scrollIndicator.style.display = 'block';
+        }
+    });
+</script>

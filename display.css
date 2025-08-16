@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: whitesmoke;
+    padding: 12px 12px;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(35, 35, 35, 0.95);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#logo {
+    height: 40px;
+    display: flex;
+    align-self: center;
+}
+
+body {
+    color: whitesmoke;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: #E6BE8A;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36pt;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24pt;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #232323;
+    min-height: 730px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.display1 {
+    max-width: 100%;
+    min-width: 0;
+    max-height: 420px;
+    min-height: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.projecttable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+table,
+th,
+td {
+    border: 0.5px solid #E6BE8A;
+    border-collapse: collapse;
+}
+
+thead {
+    font-size: 12pt;
+    text-transform: uppercase;
+    vertical-align: top;
+    background-color: #E6BE8A;
+    color: #232323;
+}
+
+tbody {
+    font-size: 10pt;
+    background-color: black;
+    border: 0.5px solid #E6BE8A;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 16px;
+}
+
+td {
+    text-align: center;
+    vertical-align: top;
+    padding: 16pt;
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1.5s infinite;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-down-indicator img {
+    height: 24px;
+    width: auto;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.theproject {
+    background-color: #232323;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+}
+
+.projecttext {
+    padding: 20px;
+}
+
+.projecttext h2 {
+    margin: 0%;
+}
+
+.display2 {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.theresult {
+    background-color: #232323;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resulttext {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resulttext h2 {
+    margin: 0%;
+}
+
+.display3 {
+    max-height: 280px;
+    width: auto;
+}
+
+footer {
+    height: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .fixed-nav,
+    .nav-container,
+    header,
+    .project,
+    .projecttable,
+    footer {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .fixed-nav {
+        background-color: #232323;
+    }
+
+    .nav-container {
+        flex-direction: row-reverse;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .projecttable {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .scroll-down-indicator {
+        display: none;
+    }
+
+    h1 {
+        font-size: 42pt;
+    }
+
+    h2 {
+        font-size: 32pt;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        gap: 40px;
+    }
+
+    header p {
+        font-size: 20pt;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+}
