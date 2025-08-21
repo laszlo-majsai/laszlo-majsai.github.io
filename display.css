@@ -261,17 +261,23 @@ footer {
 @media screen and (max-width: 1024px) {
     * {
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .fixed-nav {
         background-color: #232323;
         padding: 12px 12px 12px 12px;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     .nav-container {
         flex-direction: row;
         padding: 0;
-        width: 100vw;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     header {
@@ -300,10 +306,10 @@ footer {
         margin-top: 40px;
     }
 
-    .projecttext h2 {
+    /*     .projecttext h2 {
         text-align: center;
     }
-
+ */
     .display2 {
         flex-direction: column;
         gap: 0px;
@@ -336,9 +342,9 @@ footer {
         text-align: start;
     }
 
-    .resulttext h2 {
+    /*     .resulttext h2 {
         text-align: center;
-    }
+    } */
 
     .display3 {
         width: 100%;
@@ -374,6 +380,7 @@ footer {
 
     footer {
         height: auto;
+        width: 100%;
         padding-bottom: 20px;
         padding-top: 40px;
     }
