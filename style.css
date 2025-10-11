@@ -332,7 +332,7 @@ header p {
     justify-content: flex-start;
     background-image: url("img/backgroundvisual2.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: center right;
     background-size: 50%;
 }
 
@@ -341,7 +341,6 @@ header p {
 }
 
 #background {
-    gap: 100px;
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -350,14 +349,21 @@ header p {
 }
 
 #background1,
-#background2 {
-    max-height: 520px;
+#background2-3 {
+    max-width: 480px;
     min-height: 0;
     min-width: 0;
     width: auto;
     height: auto;
     padding-bottom: 40px;
     box-sizing: border-box;
+}
+
+#background2-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .cvbutton {
@@ -495,6 +501,7 @@ footer {
     header,
     .aboutme,
     .background,
+    #background,
     .project,
     .projecttable,
     .year,
@@ -702,16 +709,17 @@ footer {
     }
 
     #background {
-        gap: 20px;
+        gap: 0;
+        width: 100%;
     }
 
     #background1,
-    #background2 {
-        max-height: 460px;
+    #background2-3 {
+        max-width: 480px;
         min-height: 0;
         min-width: 0;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
         box-sizing: border-box;
     }
 
