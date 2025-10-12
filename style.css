@@ -386,10 +386,21 @@ header p {
     scroll-margin-top: 120px;
 }
 
-#project20,
+#project20 {
+    scroll-margin-top: 260px;
+}
+
 #project24,
 #project25 {
     scroll-margin-top: 160px;
+}
+
+.projectmain {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .project {
@@ -398,35 +409,33 @@ header p {
     padding-right: 120px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
-}
-
-.project nav {
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    box-sizing: border-box;
 }
 
 .projectboxbig {
     display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 80px;
 }
 
 .projectbox {
     background-color: #232323;
-    width: 260px;
-    max-height: 380px;
+    height: 420px;
     box-sizing: border-box;
     display: flex;
+    align-content: stretch;
+    flex: 1;
+    min-width: 200px;
 }
 
 .projectbox a {
@@ -438,14 +447,25 @@ header p {
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .projectbox img {
     max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 60%;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
 }
 
+.projectinfo {
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .projectbox:hover {
     transform: scale(1.1);
@@ -454,8 +474,6 @@ header p {
 
 .year {
     max-height: 40px;
-    padding-right: 120px;
-    padding-left: 120px;
     padding-bottom: 60px;
     width: 100%;
     display: flex;
@@ -463,6 +481,7 @@ header p {
     justify-content: space-between;
     flex-direction: row;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .line {
@@ -504,7 +523,6 @@ footer {
     #background,
     .project,
     .projecttable,
-    .year,
     footer {
         padding-left: 5vw;
         padding-right: 5vw;
@@ -725,11 +743,25 @@ footer {
 
     .year {
         gap: 10px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+    }
+
+    .projectboxbig {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .projectbox {
+        min-width: 200px;
     }
 
     footer {
         height: auto;
         padding-bottom: 20px;
         padding-top: 40px;
+        display: flex;
+        justify-content: center;
     }
 }
