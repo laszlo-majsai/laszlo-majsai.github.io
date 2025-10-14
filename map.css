@@ -77,6 +77,16 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0;
+}
+
 header {
     background-color: #232323;
     min-height: 730px;
@@ -233,6 +243,187 @@ td {
     width: 50%;
 }
 
+.doublediamond {
+    padding: 120px;
+}
+
+.doublediamond img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 40px;
+}
+
+.diamond1 {
+    max-height: 360px;
+    padding-left: 260px;
+    padding-right: 260px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+}
+
+.diamond1 img {
+    max-height: 360px;
+    width: auto;
+    max-width: 100%;
+}
+
+.diamond1inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    padding-left: 40px;
+}
+
+.diamond1inf img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.diamond2 {
+    max-height: 360px;
+    padding-right: 260px;
+    padding-right: 260px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.diamond2 img {
+    max-height: 360px;
+    width: auto;
+    max-width: 100%;
+}
+
+.diamond2inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    padding-right: 40px;
+}
+
+.diamond2inf img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.diamond3 {
+    max-height: 360px;
+    padding-left: 260px;
+    padding-right: 260px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+}
+
+.diamond3 img {
+    max-height: 360px;
+    width: auto;
+    max-width: 100%;
+}
+
+.diamond3inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    padding-left: 40px;
+}
+
+.diamond3inf img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.diamond4 {
+    max-height: 360px;
+    padding-right: 260px;
+    padding-right: 260px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.diamond4 img {
+    max-height: 360px;
+    width: auto;
+    max-width: 100%;
+}
+
+.diamond4inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    padding-right: 40px;
+}
+
+.diamond4inf img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.presentation {
+    max-height: 40px;
+    padding: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.presentation h2 {
+    text-align: center;
+}
+
+.line {
+    background-color: #E6BE8A;
+    height: 2px;
+    width: max-content;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.theresult {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.allscreens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.screen img {
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+}
+
+.screen h3 {
+    text-align: center;
+}
+
 footer {
     height: 200px;
     padding-left: 120px;
@@ -354,6 +545,79 @@ footer {
         height: auto;
         max-height: none;
         width: 100%;
+    }
+
+    .doublediamond {
+        padding: 40px;
+    }
+
+    .doublediamond img {
+        width: 100%;
+    }
+
+    .diamond1,
+    .diamond2,
+    .diamond3,
+    .diamond4 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        max-height: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .diamond1 img,
+    .diamond2 img,
+    .diamond3 img,
+    .diamond4 img {
+        max-height: 360px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .diamond1inf,
+    .diamond3inf {
+        padding-left: 20px;
+        gap: 20px;
+    }
+
+    .diamond2inf,
+    .diamond4inf {
+        padding-right: 20px;
+        gap: 20px;
+    }
+
+    .presentation {
+        padding: 40px;
+        max-height: none;
+        gap: 20px;
+    }
+
+    .line {
+        width: auto;
+        height: 2px;
+    }
+
+    .theresult {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .allscreens {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    .screen {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .screen img {
+        max-width: 240px;
     }
 
     footer {

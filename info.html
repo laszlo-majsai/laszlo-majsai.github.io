@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Board - Laszlo Majsai Portfolio</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logocolor.png">
+</head>
+
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <img src="img/logocolorfull.png" id="logo" alt="logo">
+        </div>
+    </nav>
+    <header>
+        <div data-aos="fade-right" data-aos-duration="1000" class="intro">
+            <h1>Information Board for University</h1>
+            <img src="img/piktogram-main-tp.png" class="info" alt="Info" data-aos="fade-right" data-aos-duration="1000">
+        </div>
+        <div class="projecttable">
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <thead>
+                    <tr>
+                        <th>Year of Creation</th>
+                        <th>Mentors</th>
+                        <th>Teammates</th>
+                        <th>Institution</th>
+                        <th>Toolkit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022</td>
+                        <td>Márta Kisfaludy DLA/td>
+                        <td>-</td>
+                        <td>Óbuda University</td>
+                        <td>Adobe Illustrator, Adobe Photoshop</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="scroll-down-indicator" id="scrollDown">
+            <img src="img/scroll.png" alt="scroll">
+        </div>
+    </header>
+    <main>
+        <div class="theproject" data-aos="fade-up" data-aos-duration="1000">
+            <div class="projecttext">
+                <h2>The Project</h2>
+                <p>In this project we were assigned to design the new pictograms for the faculty’s
+                    building, and make an information table with the new icons as well.</p>
+                <p> My concept was inspired by the university’s logo. I tried to reflect its geometric
+                    design, while also using the same color-combination.</p>
+            </div>
+            <img src="img/Infotabla.png" alt="Infoproject">
+        </div>
+        <div class="theprocess" data-aos="fade-up" data-aos-duration="1000">
+            <h2>The Process</h2>
+            <img src="img/process.png" alt="Infoprocess">
+        </div>
+        <div class="theresult" data-aos="fade-up" data-aos-duration="1000">
+            <h2>The Result</h2>
+            <img src="img/result.png" alt="Inforesult">
+        </div>
+    </main>
+    <footer>
+        <p>@2025 Majsai László. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    const scrollIndicator = document.getElementById('scrollDown');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            scrollIndicator.style.display = 'none';
+        } else {
+            scrollIndicator.style.display = 'block';
+        }
+    });
+</script>
