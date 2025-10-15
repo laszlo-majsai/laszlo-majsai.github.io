@@ -276,6 +276,7 @@ td {
     justify-content: space-between;
     max-width: 240px;
     padding-left: 40px;
+    text-align: end;
 }
 
 .diamond1inf img {
@@ -333,6 +334,7 @@ td {
     justify-content: space-between;
     max-width: 240px;
     padding-left: 40px;
+    text-align: end;
 }
 
 .diamond3inf img {
@@ -556,9 +558,7 @@ footer {
     }
 
     .diamond1,
-    .diamond2,
-    .diamond3,
-    .diamond4 {
+    .diamond3 {
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
@@ -566,33 +566,57 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        max-width: 400px;
+    }
+
+    .diamond2,
+    .diamond4 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        max-height: none;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        align-items: flex-end;
+        margin-left: auto;
     }
 
     .diamond1 img,
     .diamond2 img,
     .diamond3 img,
     .diamond4 img {
-        max-height: 360px;
-        width: auto;
-        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: 100%;
     }
 
     .diamond1inf,
     .diamond3inf {
         padding-left: 20px;
         gap: 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .diamond2inf,
     .diamond4inf {
         padding-right: 20px;
         gap: 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .presentation {
         padding: 40px;
         max-height: none;
         gap: 20px;
+    }
+
+    .presentation h2 {
+        font-size: 14pt;
     }
 
     .line {

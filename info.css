@@ -264,8 +264,8 @@ footer {
     }
 
     header {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         min-height: 600px;
     }
 
@@ -273,6 +273,16 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 40px;
+    }
+
+    .intro img {
+        max-width: 100%;
+        min-width: 0;
+        max-height: 480px;
+        min-height: 0;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
     }
 
     .theproject img {

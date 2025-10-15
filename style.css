@@ -435,7 +435,7 @@ header p {
     display: flex;
     align-content: stretch;
     flex: 1;
-    min-width: 200px;
+    min-width: 240px;
 }
 
 .projectbox a {
@@ -529,7 +529,9 @@ footer {
     }
 
     .fixed-nav {
-        background-color: #232323;
+        background-color: rgb(35, 35, 35, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .nav-container {
@@ -754,7 +756,7 @@ footer {
     }
 
     .projectbox {
-        min-width: 200px;
+        min-width: 240px;
     }
 
     footer {
