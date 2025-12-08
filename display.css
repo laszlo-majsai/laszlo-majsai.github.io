@@ -79,14 +79,14 @@ h2 {
 
 header {
     background-color: #232323;
-    min-height: 730px;
+    height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -101,12 +101,11 @@ header {
 
 .display1 {
     max-width: 100%;
-    min-width: 0;
-    max-height: 420px;
-    min-height: 0;
+    max-height: 60vh;
     width: auto;
     height: auto;
     box-sizing: border-box;
+    padding-bottom: 20px;
 }
 
 .projecttable {
@@ -284,6 +283,7 @@ footer {
         padding-left: 40px;
         padding-right: 40px;
         min-height: 600px;
+        height: 100%;
     }
 
     .intro {

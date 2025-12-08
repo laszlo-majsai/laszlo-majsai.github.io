@@ -89,7 +89,7 @@ h3 {
 
 header {
     background-color: #232323;
-    min-height: 730px;
+    height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 80px;
@@ -111,13 +111,11 @@ header {
 
 .dontlookmain {
     max-width: 100%;
-    min-width: 0;
-    max-height: 420px;
-    min-height: 0;
+    max-height: 60vh;
     width: auto;
     height: auto;
     box-sizing: border-box;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .projecttable {
@@ -254,6 +252,7 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         min-height: 600px;
+        height: 100%;
     }
 
     .intro {

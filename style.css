@@ -10,12 +10,12 @@
     z-index: 10;
     text-align: center;
     width: 100%;
-    background-color: rgb(35, 35, 35, 0.95);
+    background-color: rgb(35, 35, 35, 0.8);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav-container {
@@ -83,9 +83,9 @@
 
 .dropdown-content {
     position: absolute;
-    background-color: rgb(35, 35, 35, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(35, 35, 35, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     width: 180px;
     z-index: 1;
     text-align: left;
@@ -207,7 +207,7 @@ h6 {
 
 header {
     background-color: #232323;
-    min-height: 730px;
+    height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 20px;
@@ -236,10 +236,8 @@ header p {
 }
 
 #profile {
-    max-width: 500px;
-    min-width: 0;
-    max-height: 100%;
-    min-height: 0;
+    max-width: 100%;
+    max-height: 80vh;
     width: auto;
     height: auto;
     box-sizing: border-box;
@@ -320,6 +318,37 @@ header p {
     padding-left: 80px;
     padding-right: 80px;
     text-align: left;
+}
+
+#manifesto {
+    scroll-margin-top: 120px;
+}
+
+.manifesto {
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("img/BackgroundVisual2_2.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 50%;
+}
+
+.manifesto h6 {
+    color: #E6BE8A;
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.manifesto p {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 16pt;
 }
 
 .background {
@@ -519,6 +548,7 @@ footer {
     .nav-container,
     header,
     .aboutme,
+    .manifesto,
     .background,
     #background,
     .project,
@@ -529,9 +559,7 @@ footer {
     }
 
     .fixed-nav {
-        background-color: rgb(35, 35, 35, 0.95);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background-color: #232323;
     }
 
     .nav-container {
@@ -712,7 +740,6 @@ footer {
         flex-wrap: nowrap;
     }
 
-
     .aboutme {
         height: auto;
         background-size: 100%;
@@ -720,6 +747,25 @@ footer {
     }
 
     .aboutme p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .manifesto {
+        height: auto;
+        background-size: 100%;
+    }
+
+    .manifesto h3 {
+        text-align: center;
+    }
+
+    .manifesto h6 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .manifesto p {
         padding-left: 0;
         padding-right: 0;
     }
