@@ -216,6 +216,79 @@ td {
     object-position: center;
 }
 
+.thedatabase {
+    background-color: #232323;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datatext {
+    padding: 60px;
+}
+
+.datatext h2 {
+    margin: 0%;
+}
+
+.data {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+
+.theresult {
+    height: 480px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resulttext {
+    padding: 0px 60px 0px 0px;
+}
+
+.resulttext h2 {
+    margin: 0%;
+}
+
+.stair1 {
+    height: 480px;
+    width: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+
+.theprompt {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prompttext {
+    padding: 0px 0px 60px 0px;
+}
+
+.prompt {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+
 footer {
     height: 200px;
     padding-left: 120px;
@@ -316,6 +389,59 @@ footer {
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 40px;
+    }
+
+    .data {
+        overflow: hidden;
+    }
+
+    .datatext {
+        padding: 40px;
+        width: 100%;
+    }
+
+    .thedatabase {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+    .stair1 {
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+    }
+
+    .resulttext {
+        padding: 0px 0px 40px 0px;
+        width: 100%;
+    }
+
+    .theresult {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+    .prompt {
+        overflow: hidden;
+    }
+
+    .prompttext {
+        padding: 0px 0px 40px 0px;
+        width: 100%;
+    }
+
+    .theprompt {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
     }
 
     footer {
