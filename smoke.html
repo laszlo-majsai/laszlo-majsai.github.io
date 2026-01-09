@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoke Quitting App - Laszlo Majsai Portfolio</title>
+    <link rel="stylesheet" href="smoke.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logocolor.png">
+</head>
+
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <img src="img/logocolorfull.png" id="logo" alt="logo">
+        </div>
+    </nav>
+    <header>
+        <div data-aos="fade-right" data-aos-duration="1000" class="intro">
+            <h1>Don't Look Up - Data Vizualization</h1>
+            <img src="img/smoke.png" class="smokemain" alt="SmokeMain" data-aos="fade-right" data-aos-duration="1000">
+        </div>
+        <div class="projecttable">
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <thead>
+                    <tr>
+                        <th>Year of Creation</th>
+                        <th>Mentors</th>
+                        <th>Teammates</th>
+                        <th>Institution</th>
+                        <th>Toolkit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>Ágnes Karolina Bakk, Sam Chovanec,
+                            Borbála Tölgyesi </td>
+                        <td>Ágnes Réka Varga</td>
+                        <td>Moholy-Nagy University of Art and Design</td>
+                        <td>Figma, Adobe Illustrator</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="scroll-down-indicator" id="scrollDown">
+            <img src="img/scroll.png" alt="scroll">
+        </div>
+    </header>
+    <main>
+        <div class="theproject" data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/smoke2.png" class="smoke2" alt="Smoke2">
+            <div class="projecttext">
+                <h2>The Project</h2>
+                <p>This concept is made for a course called “Designing positive technology tools”. The goal of the class
+                    was to choose a mental health issue and design an app or any digital platform, that can help people
+                    deal with it. We have chosen addiction.</p>
+                <p> After several brainstormings, we decided to create an app that helps people quit smoking. It is a
+                    concept, that has many already implemented examples for, but we made our own approach to it, that
+                    differs from other similar items on the market.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@2025 Majsai László. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    const scrollIndicator = document.getElementById('scrollDown');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            scrollIndicator.style.display = 'none';
+        } else {
+            scrollIndicator.style.display = 'block';
+        }
+    });
+</script>

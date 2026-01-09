@@ -289,6 +289,41 @@ td {
     object-position: center;
 }
 
+.ars {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arstext {
+    padding-bottom: 60px;
+}
+
+.arstext h2 {
+    margin: 0px;
+}
+
+.arsimg {
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.arsi {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
 footer {
     height: 200px;
     padding-left: 120px;
@@ -442,6 +477,17 @@ footer {
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 20px;
+    }
+
+    .ars {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+    .arsimg {
+        max-height: 100%;
+        flex-direction: column;
     }
 
     footer {
