@@ -111,7 +111,7 @@ header {
 
 .map1 {
     max-width: 100%;
-    max-height: 60vh;
+    max-height: 58vh;
     width: auto;
     height: auto;
     box-sizing: border-box;
@@ -123,6 +123,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
 }
 
 table,
@@ -133,11 +134,12 @@ td {
 }
 
 thead {
-    font-size: 12pt;
+    font-size: 10pt;
     text-transform: uppercase;
-    vertical-align: top;
+    vertical-align: middle;
     background-color: #E6BE8A;
     color: #232323;
+    text-wrap-mode: nowrap;
 }
 
 tbody {

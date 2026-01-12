@@ -415,13 +415,10 @@ header p {
     scroll-margin-top: 120px;
 }
 
-#project20 {
-    scroll-margin-top: 260px;
-}
-
+#project20,
 #project24,
 #project25 {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 260px;
 }
 
 .projectmain {
