@@ -179,7 +179,7 @@ h3 {
 h4 {
     color: #E6BE8A;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 500;
     line-height: normal;
     text-transform: none;
@@ -189,7 +189,7 @@ h4 {
 h5 {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: 400;
     line-height: normal;
     text-transform: none;
@@ -446,22 +446,22 @@ header p {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2vw;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
-    padding-bottom: 80px;
+    padding-bottom: 8vh;
 }
 
 .projectbox {
     background-color: #232323;
-    height: 420px;
+    height: 480px;
     box-sizing: border-box;
     display: flex;
     align-content: stretch;
     flex: 1;
-    min-width: 240px;
+    min-width: 160px;
 }
 
 .projectbox a {
@@ -788,18 +788,35 @@ footer {
 
     .year {
         gap: 10px;
-        padding-bottom: 40px;
         box-sizing: border-box;
     }
 
     .projectboxbig {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        gap: 4vh;
+        align-items: center;
     }
 
     .projectbox {
-        min-width: 240px;
+        height: auto;
+        min-height: 50vh;
+        width: 80%;
+    }
+
+    .projectbox img {
+        height: 40vh;
+        max-height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .projectinfo {
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     footer {

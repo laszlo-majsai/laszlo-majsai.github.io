@@ -476,7 +476,6 @@ footer {
 @media screen and (max-width: 1024px) {
     * {
         box-sizing: border-box;
-        overflow-x: hidden;
     }
 
     .fixed-nav {
@@ -536,6 +535,7 @@ footer {
 
     body {
         font-size: 12pt;
+        overflow-x: hidden;
     }
 
     tbody {
@@ -559,6 +559,8 @@ footer {
     .theproject {
         height: auto;
         display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         flex-direction: column-reverse;
         margin-left: 40px;
         margin-right: 40px;
@@ -579,7 +581,16 @@ footer {
     }
 
     .findings h3 {
-        font-size: 18pt;
+        font-size: 16pt;
+    }
+
+    .findingbox h4 {
+        font-size: 12pt;
+        min-width: 120px;
+    }
+
+    .points {
+        padding-left: 10px;
     }
 
     .smokesurvey {
@@ -600,8 +611,21 @@ footer {
         align-items: center;
     }
 
+    .strategy {
+        max-width: 640px;
+    }
+
     .strategy h3 {
-        font-size: 18pt;
+        font-size: 16pt;
+    }
+
+    .strategybox h4 {
+        font-size: 12pt;
+        min-width: 120px;
+    }
+
+    .strategybox p {
+        padding-left: 10px;
     }
 
     .smokeideation {

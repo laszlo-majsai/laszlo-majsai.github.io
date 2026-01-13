@@ -262,7 +262,6 @@ footer {
 @media screen and (max-width: 1024px) {
     * {
         box-sizing: border-box;
-        overflow-x: hidden;
     }
 
     .fixed-nav {
@@ -358,6 +357,7 @@ footer {
 
     .projecttable {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     table {
@@ -374,6 +374,7 @@ footer {
 
     body {
         font-size: 12pt;
+        overflow-x: hidden;
     }
 
     tbody {
