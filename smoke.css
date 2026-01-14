@@ -422,22 +422,21 @@ td {
 }
 
 .screen {
+    max-width: 280px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 240px;
 }
 
 .screen img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    flex-shrink: 0;
 }
 
 .screen h3 {
+    line-height: normal;
     text-align: center;
-    width: 100%;
-    height: auto;
 }
 
 .prototype {
@@ -648,7 +647,7 @@ footer {
     .fullresearch {
         margin-left: 40px;
         margin-right: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .theresult {
@@ -657,22 +656,31 @@ footer {
     }
 
     .allscreens {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 40px;
         padding-top: 40px;
-        align-items: center;
     }
 
     .screen {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        align-items: center;
-        max-width: 320px;
+    }
+
+    .screen img {
+        max-height: 600px;
+        width: auto;
+        max-width: 100%;
     }
 
     .prototype {
         margin-left: 40px;
         margin-right: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     footer {

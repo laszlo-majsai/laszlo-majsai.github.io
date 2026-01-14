@@ -179,7 +179,7 @@ h3 {
 h4 {
     color: #E6BE8A;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14pt;
+    font-size: 2.5vh;
     font-weight: 500;
     line-height: normal;
     text-transform: none;
@@ -189,7 +189,7 @@ h4 {
 h5 {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
+    font-size: 2vh;
     font-weight: 400;
     line-height: normal;
     text-transform: none;
@@ -222,6 +222,7 @@ header {
 }
 
 .intro {
+    max-width: 720px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -325,30 +326,107 @@ header p {
 }
 
 .manifesto {
-    padding-top: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url("img/BackgroundVisual2_2.png");
+    min-height: 600px;
+    padding: 40px 120px 40px 120px;
+    background-image: url("img/backgroundvisual2_2.png");
     background-repeat: no-repeat;
     background-position: center left;
     background-size: 50%;
 }
 
-.manifesto h6 {
-    color: #E6BE8A;
-    margin: 0;
-    padding-left: 80px;
-    padding-right: 80px;
+.manifesto h3 {
+    font-size: 48pt;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 80px;
+    color: whitesmoke;
 }
 
-.manifesto p {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 16pt;
+.manifesto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    object-fit: contain;
+}
+
+.manifesto-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    object-fit: contain;
+}
+
+.manifesto-card {
+    background-color: #2a2a2a;
+    border: 2px solid #E6BE8A;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-height: 120px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manifesto-card:hover {
+    border-color: whitesmoke;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.manifesto-card.active {
+    border-color: whitesmoke;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.card-title {
+    font-size: 12pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: whitesmoke;
+    line-height: 1.2;
+    width: 12vw;
+}
+
+.manifesto-text {
+    position: fixed;
+    left: 120px;
+    right: 120px;
+    padding-top: 40px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow: visible;
+}
+
+.manifesto-text.visible {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.manifesto-text h4 {
+    font-size: 32pt;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.manifesto-text p {
+    font-size: 12pt;
+    font-weight: 400;
+    color: whitesmoke;
+    line-height: 1.6;
 }
 
 .background {
@@ -379,7 +457,7 @@ header p {
 
 #background1,
 #background2-3 {
-    max-width: 480px;
+    max-width: 36vw;
     min-height: 0;
     min-width: 0;
     width: auto;
@@ -456,7 +534,7 @@ header p {
 
 .projectbox {
     background-color: #232323;
-    height: 480px;
+    height: 60vh;
     box-sizing: border-box;
     display: flex;
     align-content: stretch;
@@ -540,7 +618,6 @@ footer {
     * {
         box-sizing: border-box;
     }
-
 
     .nav-container,
     header,
@@ -727,6 +804,10 @@ footer {
         box-sizing: border-box;
     }
 
+    .intro {
+        max-width: none;
+    }
+
     .icons {
         max-width: 100%;
         gap: 20px;
@@ -749,22 +830,46 @@ footer {
     }
 
     .manifesto {
-        height: auto;
-        background-size: 100%;
+        padding: 40px 8vw;
     }
 
     .manifesto h3 {
-        text-align: center;
+        font-size: 32pt;
+        margin-bottom: 40px;
     }
 
-    .manifesto h6 {
-        padding-left: 0;
-        padding-right: 0;
+    .manifesto-cards {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .manifesto p {
-        padding-left: 0;
-        padding-right: 0;
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .manifesto-card {
+        min-height: 10vh;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
+    .manifesto-text {
+        padding: 30px 20px;
+        min-height: auto;
+        position: static;
+    }
+
+    .manifesto-text h4 {
+        font-size: 20pt;
+    }
+
+    .manifesto-text p {
+        font-size: 12pt;
     }
 
     .background {
