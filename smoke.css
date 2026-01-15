@@ -164,7 +164,7 @@ td {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    animation: pulse 1.5s infinite;
+    animation: pulse1 1.5s infinite;
     z-index: 10;
     transition: opacity 0.3s ease;
 }
@@ -174,7 +174,7 @@ td {
     width: auto;
 }
 
-@keyframes pulse {
+@keyframes pulse1 {
     0% {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
