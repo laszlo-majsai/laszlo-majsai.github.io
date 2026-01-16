@@ -109,7 +109,7 @@ header {
     box-sizing: border-box;
 }
 
-.smokemain {
+.niumain {
     max-width: 100%;
     max-height: 58vh;
     width: auto;
@@ -210,289 +210,131 @@ td {
     margin: 0%;
 }
 
-.smoke2 {
+.niu1 {
     height: 480px;
     width: 40%;
     box-sizing: border-box;
     object-fit: cover;
-    object-position: center;
+    object-position: left;
 }
 
-.theresearch {
+.thebrief {
+    margin-top: 120px;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
 }
 
-.researchbody {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.smokesurvey {
-    max-width: 640px;
-    width: 50%;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.findings {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    gap: 40px;
-}
-
-.findings h3 {
+.thebrief h3 {
     font-size: 20pt;
     font-weight: 400;
-}
-
-.findingbox {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.findingbox h4 {
-    font-size: 16pt;
-    line-height: 1.2;
-    font-weight: 400;
-    white-space: nowrap;
-    min-width: 180px;
-    margin: 0;
-}
-
-.line {
-    background-color: #E6BE8A;
-    width: 2px;
-    align-self: stretch;
-    flex-shrink: 0;
-}
-
-.points {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-left: 20px;
-}
-
-.points p {
-    line-height: 1.6;
-    margin: 0;
-}
-
-.theideation {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.ideationbody {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.smokeideation {
-    max-width: 720px;
-    width: 40%;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.strategy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    gap: 40px;
-}
-
-.strategy h3 {
-    font-size: 20pt;
-    font-weight: 400;
-}
-
-.strategybox {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.strategybox h4 {
-    font-size: 16pt;
-    line-height: 1.2;
-    font-weight: 400;
-    white-space: nowrap;
-    min-width: 180px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.line {
-    background-color: #E6BE8A;
-    width: 2px;
-    align-self: stretch;
-    flex-shrink: 0;
-}
-
-.strategybox p {
-    font-size: 12pt;
-    padding-left: 20px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.userflow {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.smokeuser {
-    width: 100%;
-    height: auto;
-}
-
-.service {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.smokeservice {
-    width: 100%;
-    height: auto;
-}
-
-.fullresearch {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-.researchbutton {
-    color: black;
-    background-color: #E6BE8A;
-    height: 40px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.researchbutton:hover {
-    background-color: whitesmoke;
-}
-
-.theresult {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.allscreens {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
     padding-top: 40px;
 }
 
-.screen {
-    max-width: 280px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.thebrief img {
+    width: 80%;
+    height: auto;
+    padding-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.screen img {
+.theprocess {
+    margin-top: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.theprocess h3 {
+    font-size: 20pt;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.theprocess h4 {
+    font-size: 16pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.theprocess img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lowall {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.lowpair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.lowpair img {
+    max-width: 350px;
     width: 100%;
     height: auto;
-    flex-shrink: 0;
+    padding-top: 0;
 }
 
-.screen h3 {
-    line-height: normal;
-    text-align: center;
-}
-
-.proto {
-    background-color: #232323;
-    margin-top: 120px;
-    padding: 120px;
+.designsystem {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    align-items: center;
-    box-sizing: border-box;
+    gap: 40px;
 }
 
-.prototitle {
+.designsystem img {
+    max-width: 600px;
+    min-width: 100px;
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+}
+
+.designsystem h4 {
+    padding: 0;
+}
+
+.colors {
     display: flex;
-    align-items: center;
-    gap: 60px;
+    flex-direction: column;
+    object-fit: contain;
 }
 
-.arrow {
-    animation: pulse 1.5s infinite;
-    z-index: 10;
-    transition: opacity 0.3s ease;
-    height: 24px;
-    width: auto;
-    transform: translateX(-50%);
+.primary {
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes pulse {
-    0% {
-        transform: translateX(0) rotate(-90deg);
-        opacity: 1;
-    }
 
-    50% {
-        transform: translateX(10px) rotate(-90deg);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: translateX(0) rotate(-90deg);
-        opacity: 1;
-    }
+.secondary {
+    display: flex;
+    flex-direction: column;
 }
 
-.protoimg img {
-    height: 60vh;
-    width: auto;
-    filter: drop-shadow(1px 1px 0 #E6BE8A) drop-shadow(-1px -1px 0 #E6BE8A) drop-shadow(-1px 1px 0 #E6BE8A) drop-shadow(1px -1px 0 #E6BE8A);
-}
-
-.protoimg img:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-    filter: drop-shadow(1px 1px 0 whitesmoke) drop-shadow(-1px -1px 0 whitesmoke) drop-shadow(-1px 1px 0 whitesmoke) drop-shadow(1px -1px 0 whitesmoke);
+.element {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -540,7 +382,7 @@ footer {
         gap: 40px;
     }
 
-    .smokemain {
+    .niumain {
         max-width: 100%;
         min-width: 0;
         max-height: 480px;
@@ -575,7 +417,7 @@ footer {
         font-size: 10pt;
     }
 
-    .smoke2 {
+    .niu1 {
         width: 100%;
         height: 50%;
         box-sizing: border-box;
@@ -600,159 +442,60 @@ footer {
         margin-top: 10vh;
     }
 
-    .theresearch {
-        height: auto;
-        display: flex;
+    .thebrief {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
     }
 
-    .researchbody {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .findings h3 {
+    .thebrief h3 {
         font-size: 16pt;
+        padding-top: 5vh;
     }
 
-    .findingbox h4 {
-        font-size: 12pt;
-        min-width: 120px;
-    }
-
-    .points {
-        padding-left: 10px;
-    }
-
-    .smokesurvey {
-        max-width: 1000px;
+    .thebrief img {
+        padding-top: 3vh;
         width: 100%;
     }
 
-    .theideation {
-        height: auto;
-        display: flex;
+    .theprocess {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
     }
 
-    .ideationbody {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .strategy {
-        max-width: 640px;
-    }
-
-    .strategy h3 {
+    .theprocess h3 {
         font-size: 16pt;
+        padding-top: 5vh;
     }
 
-    .strategybox h4 {
-        font-size: 12pt;
-        min-width: 120px;
+    .theprocess h4 {
+        font-size: 14pt;
+        padding-top: 5vh;
     }
 
-    .strategybox p {
-        padding-left: 10px;
-    }
-
-    .smokeideation {
-        max-width: 1000px;
+    .theprocess img {
         width: 100%;
     }
 
-    .userflow {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 10vh;
+    .lowpair img {
+        padding-top: 0;
     }
 
-    .service {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 10vh;
-    }
-
-    .fullresearch {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 10vh;
-    }
-
-    .theresult {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 10vh;
-    }
-
-    .allscreens {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .designsystem {
         flex-wrap: wrap;
-        gap: 40px;
-        padding-top: 40px;
     }
 
-    .screen {
-        max-width: 200px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .designsystem h3 {
+        padding-top: 0;
     }
 
-    .screen img {
-        max-height: 600px;
-        width: auto;
-        max-width: 100%;
+    .designsystem h4 {
+        padding-top: 0;
     }
 
-    .proto {
-        padding: 5vw;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-    }
-
-    .proto h1 {
-        text-align: center;
-    }
-
-    .prototitle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        padding-bottom: 5vh;
-    }
-
-    .protoimg img {
-        height: 50vh;
-    }
-
-    @keyframes pulse {
-        0% {
-            transform: translateY(0) rotate(0deg);
-            opacity: 1;
-        }
-
-        50% {
-            transform: translateY(10px) rotate(0deg);
-            opacity: 0.5;
-        }
-
-        100% {
-            transform: translateY(0) rotate(0deg);
-            opacity: 1;
-        }
+    .designsystem img {
+        padding-top: 0;
     }
 
     footer {

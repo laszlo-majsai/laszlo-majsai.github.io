@@ -635,6 +635,7 @@ footer {
     #background,
     .project,
     .projecttable,
+    .manifesto,
     footer {
         padding-left: 5vw;
         padding-right: 5vw;
@@ -793,8 +794,6 @@ footer {
         height: auto;
         padding-top: 60px;
         padding-bottom: 60px;
-        padding-left: 5vw;
-        padding-right: 5vw;
         gap: 40px;
     }
 
@@ -838,7 +837,8 @@ footer {
     }
 
     .manifesto {
-        padding: 40px 8vw;
+        padding-top: 40px;
+        background-image: none;
     }
 
     .manifesto h3 {

@@ -277,7 +277,7 @@ td {
 
 .conceptbox h4 {
     font-size: 32pt;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
     min-width: 100px;
     text-transform: uppercase;
@@ -341,7 +341,7 @@ td {
 
 .findingbox h4 {
     font-size: 32pt;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
     min-width: 100px;
     text-transform: uppercase;
@@ -612,8 +612,8 @@ footer {
     }
 
     header {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5vw;
+        padding-right: 5vw;
         min-height: 600px;
         height: 100%;
     }
@@ -664,7 +664,7 @@ footer {
     }
 
     .projecttext {
-        padding: 40px;
+        padding: 5vw;
         width: 100%;
     }
 
@@ -674,15 +674,16 @@ footer {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         flex-direction: column-reverse;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .theideation {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+        gap: 3vh;
     }
 
     .theideation h3 {
@@ -693,6 +694,7 @@ footer {
     .problems {
         flex-direction: column;
         align-items: center;
+        gap: 2vh;
     }
 
     .problems h3 {
@@ -719,6 +721,7 @@ footer {
     .research {
         flex-direction: column;
         align-items: center;
+        gap: 2vh;
     }
 
     .findingfull {
@@ -743,15 +746,16 @@ footer {
     }
 
     .fullideation {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .theprogress {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+        gap: 3vh;
     }
 
     .theprogress h3 {
@@ -760,14 +764,15 @@ footer {
     }
 
     .fullprogress {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .theresult {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .allscreens {
@@ -793,22 +798,22 @@ footer {
     }
 
     .theredesign {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .theredesign h2 {
-        padding: 40px 40px 0px 40px;
+        padding: 0 5vw 0 5vw;
     }
 
     .theredesign p {
-        padding: 0px 40px 0px 40px;
+        padding: 0 5vw 0 5vw;
     }
 
     .redesignimg {
-        padding: 20px 40px 40px 40px;
-        width: 80%;
+        padding: 5vw;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -825,8 +830,7 @@ footer {
     }
 
     .proto {
-        margin-top: 40px;
-        padding: 40px;
+        padding: 5vw;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -844,7 +848,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 5vh;
     }
 
     @keyframes pulse {
@@ -869,13 +873,13 @@ footer {
     }
 
     .protoimg img {
-        height: 30vh;
+        height: 28vh;
     }
 
     footer {
         height: auto;
         padding-bottom: 20px;
-        padding-top: 40px;
+        padding-top: 10vh;
         padding-left: 20px;
         padding-right: 20px;
         display: flex;

@@ -358,8 +358,8 @@ footer {
     }
 
     header {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5vw;
+        padding-right: 5vw;
         min-height: 600px;
         height: 100%;
     }
@@ -416,7 +416,7 @@ footer {
     }
 
     .projecttext {
-        padding: 40px;
+        padding: 5vw;
         width: 100%;
     }
 
@@ -424,9 +424,9 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .data {
@@ -434,14 +434,14 @@ footer {
     }
 
     .datatext {
-        padding: 40px;
+        padding: 5vw;
         width: 100%;
     }
 
     .thedatabase {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .stair1 {
@@ -454,7 +454,7 @@ footer {
     }
 
     .resulttext {
-        padding: 0px 0px 40px 0px;
+        padding: 0px 0px 5vh 0px;
         width: 100%;
     }
 
@@ -462,9 +462,9 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
     }
 
     .prompt {
@@ -472,20 +472,24 @@ footer {
     }
 
     .prompttext {
-        padding: 0px 0px 40px 0px;
+        padding: 0;
         width: 100%;
     }
 
     .theprompt {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 5vh;
     }
 
     .ars {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 40px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+    }
+
+    .arstext {
+        padding: 0;
     }
 
     .arsimg {
@@ -496,7 +500,7 @@ footer {
     footer {
         height: auto;
         padding-bottom: 20px;
-        padding-top: 40px;
+        padding-top: 10vh;
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
