@@ -509,7 +509,7 @@ td {
 .proto {
     background-color: #232323;
     margin-top: 120px;
-    padding: 120px;
+    padding: 120px 120px 0px 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -581,7 +581,6 @@ td {
 
 footer {
     background-color: #232323;
-    height: 200px;
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 80px;
