@@ -663,6 +663,12 @@ footer {
     .proto h1 {
         text-align: center;
         margin-bottom: 0;
+        color: whitesmoke;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36pt;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
     }
 
     .prototitle {
@@ -673,8 +679,12 @@ footer {
     }
 
     .arrow {
-        width: 5vw;
-        height: auto;
+        animation: pulse 1.5s infinite;
+        z-index: 10;
+        transition: opacity 0.3s ease;
+        height: 24px;
+        width: auto;
+        transform: translateX(-50%);
     }
 
     @keyframes pulse {
@@ -695,7 +705,13 @@ footer {
     }
 
     .protos {
+        flex-direction: column;
         gap: 4vw;
+        padding: 0;
+    }
+
+    .protoimg img {
+        max-width: 48vw;
     }
 
     footer {
