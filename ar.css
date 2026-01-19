@@ -218,6 +218,215 @@ td {
     object-position: left;
 }
 
+.theconcept {
+    max-height: 80vh;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.concepttext {
+    padding: 60px;
+}
+
+.ar2 {
+    max-height: 80vh;
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: left;
+}
+
+.theprogress {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    gap: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.theprogress h3 {
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.aruser {
+    width: 100%;
+    height: auto;
+}
+
+.arlow {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ararts {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arprocess {
+    width: 100%;
+    height: auto;
+}
+
+.theresult {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.allscreens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.screen {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.screen img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.screen h3 {
+    line-height: normal;
+    text-align: center;
+}
+
+.video {
+    background-color: #232323;
+    margin-top: 120px;
+    padding: 120px 120px 120px 120px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.video h1 {
+    text-align: center;
+}
+
+.videotitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videotitle .arrow {
+    animation: pulse1 1.5s infinite;
+    z-index: 10;
+    padding-bottom: 40px;
+    height: 24px;
+}
+
+@keyframes pulse1 {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.video video {
+    border-style: solid;
+    border-color: rgb(2, 2, 2);
+    border-width: 0.5vw;
+    border-radius: 0.5vw;
+    filter: drop-shadow(-4px 4px 4px hsla(0, 0%, 0%, 0.4));
+}
+
+.proto {
+    background-color: #232323;
+    padding: 120px 120px 120px 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.prototitle {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.prototitle .arrow {
+    animation: pulse 1.5s infinite;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    height: 24px;
+    width: auto;
+    transform: translateX(-50%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(0) rotate(-90deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px) rotate(-90deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0) rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+.protoimg img {
+    height: 60vh;
+    width: auto;
+    filter: drop-shadow(1px 1px 0 #E6BE8A) drop-shadow(-1px -1px 0 #E6BE8A) drop-shadow(-1px 1px 0 #E6BE8A) drop-shadow(1px -1px 0 #E6BE8A);
+}
+
+.protoimg img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    filter: drop-shadow(1px 1px 0 whitesmoke) drop-shadow(-1px -1px 0 whitesmoke) drop-shadow(-1px 1px 0 whitesmoke) drop-shadow(1px -1px 0 whitesmoke);
+}
+
 footer {
     background-color: #232323;
     padding-left: 120px;
@@ -319,6 +528,141 @@ footer {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
+    }
+
+    .theconcept {
+        max-height: none;
+        height: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: column-reverse;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+    }
+
+    .concepttext {
+        padding: 0 0 5vh 0;
+    }
+
+    .ar2 {
+        max-height: none;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .theprogress {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+        gap: 3vh;
+    }
+
+    .theprogress h3 {
+        font-size: 16pt;
+        font-weight: 400;
+    }
+
+    .arlow {
+        width: 100%;
+        height: auto;
+    }
+
+    .arprocess {
+        width: 100%;
+        height: auto;
+    }
+
+    .theresult {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+    }
+
+    .allscreens {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    .screen {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .screen img {
+        max-height: 600px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .video {
+        padding: 5vw;
+    }
+
+    .videotitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    .videotitle .arrow {
+        box-sizing: content-box !important;
+        z-index: 10;
+        padding-bottom: 40px;
+        height: 24px;
+    }
+
+    .proto {
+        padding: 5vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .proto h1 {
+        text-align: center;
+    }
+
+    .prototitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding-bottom: 5vh;
+    }
+
+    .protoimg img {
+        height: 50vh;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+
+        50% {
+            transform: translateY(10px) rotate(0deg);
+            opacity: 0.5;
+        }
+
+        100% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
     }
 
     footer {
