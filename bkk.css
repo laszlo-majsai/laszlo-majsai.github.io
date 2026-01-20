@@ -109,13 +109,14 @@ header {
     box-sizing: border-box;
 }
 
-.smokemain {
+.bkkmain {
     max-width: 100%;
     max-height: 58vh;
     width: auto;
     height: auto;
     box-sizing: border-box;
     padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .projecttable {
@@ -210,15 +211,38 @@ td {
     margin: 0%;
 }
 
-.smoke2 {
+.bkk1 {
     height: 480px;
     width: 40%;
     box-sizing: border-box;
     object-fit: cover;
-    object-position: center;
+    object-position: left;
 }
 
-.theresearch {
+.theconcept {
+    max-height: 60vh;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.concepttext {
+    padding: 60px;
+}
+
+.bkk2 {
+    max-height: 60vh;
+    height: auto;
+    width: 40vh;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: left;
+}
+
+.keyobjective {
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 120px;
@@ -226,141 +250,37 @@ td {
     flex-direction: column;
 }
 
-.researchbody {
+.allkey {
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    align-items: flex-start;
     justify-content: center;
+    gap: 60px;
+    padding-top: 40px;
 }
 
-.smokesurvey {
-    max-width: 640px;
-    width: 50%;
+.key {
+    max-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.key img {
+    width: 100%;
     height: auto;
     flex-shrink: 0;
 }
 
-.findings {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    gap: 40px;
-}
-
-.findings h3 {
-    font-size: 20pt;
-    font-weight: 400;
-}
-
-.findingbox {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.findingbox h4 {
-    font-size: 16pt;
-    line-height: 1.2;
-    font-weight: 400;
-    white-space: nowrap;
-    min-width: 180px;
-    margin: 0;
-}
-
-.line {
-    background-color: #E6BE8A;
-    width: 2px;
-    align-self: stretch;
-    flex-shrink: 0;
-}
-
-.points {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-left: 20px;
-}
-
-.points p {
-    line-height: 1.6;
-    margin: 0;
-}
-
-.theideation {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.ideationbody {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.smokeideation {
-    max-width: 720px;
-    width: 40%;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.strategy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    gap: 40px;
-}
-
-.strategy h3 {
-    font-size: 20pt;
-    font-weight: 400;
-}
-
-.strategybox {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.strategybox h4 {
-    font-size: 16pt;
-    line-height: 1.2;
-    font-weight: 400;
-    white-space: nowrap;
-    min-width: 180px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.line {
-    background-color: #E6BE8A;
-    width: 2px;
-    align-self: stretch;
-    flex-shrink: 0;
-}
-
-.strategybox p {
-    font-size: 12pt;
-    padding-left: 20px;
-    line-height: 1.6;
-    margin: 0;
+.key h3 {
+    line-height: normal;
+    text-align: center;
 }
 
 .theprogress {
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 120px;
-    gap: 4vh;
     display: flex;
     flex-direction: column;
 }
@@ -370,20 +290,82 @@ td {
     font-weight: 400;
 }
 
-.theprogress img {
+.bkkuser {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+
+.allresearch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+
+.researchpair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.research {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.research img {
     width: 100%;
     height: auto;
 }
 
-.fullresearch {
+.research h3 {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.alltest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.alltest img {
+    max-width: 26vw;
+    width: 100%;
+    height: auto;
+}
+
+.fullprogress {
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 60px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-.researchbutton {
+.progressbutton {
     color: black;
     background-color: #E6BE8A;
     height: 40px;
@@ -391,10 +373,9 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.researchbutton:hover {
+.progressbutton:hover {
     background-color: whitesmoke;
 }
 
@@ -410,7 +391,7 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60px;
     padding-top: 40px;
 }
 
@@ -435,7 +416,7 @@ td {
 .proto {
     background-color: #232323;
     margin-top: 120px;
-    padding: 120px 120px 0px 120px;
+    padding: 120px 120px 120px 120px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -450,7 +431,7 @@ td {
     gap: 60px;
 }
 
-.arrow {
+.prototitle .arrow {
     animation: pulse 1.5s infinite;
     z-index: 10;
     transition: opacity 0.3s ease;
@@ -532,7 +513,7 @@ footer {
         gap: 40px;
     }
 
-    .smokemain {
+    .bkkmain {
         max-width: 100%;
         min-width: 0;
         max-height: 480px;
@@ -567,12 +548,11 @@ footer {
         font-size: 10pt;
     }
 
-    .smoke2 {
+    .bkk1 {
         width: 100%;
-        height: 50%;
         box-sizing: border-box;
         object-fit: cover;
-        object-position: center;
+        object-position: 50% 0%;
         overflow: hidden;
     }
 
@@ -592,70 +572,55 @@ footer {
         margin-top: 10vh;
     }
 
-    .theresearch {
+    .theconcept {
+        max-height: none;
         height: auto;
-        display: flex;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: column-reverse;
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
     }
 
-    .researchbody {
-        flex-direction: column;
-        align-items: center;
+    .concepttext {
+        padding: 0 0 5vh 0;
     }
 
-    .findings h3 {
-        font-size: 16pt;
-    }
-
-    .findingbox h4 {
-        font-size: 12pt;
-        min-width: 120px;
-    }
-
-    .points {
-        padding-left: 10px;
-    }
-
-    .smokesurvey {
-        max-width: 1000px;
-        width: 100%;
-    }
-
-    .theideation {
+    .bkk2 {
+        max-height: none;
         height: auto;
-        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .keyobjective {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
     }
 
-    .ideationbody {
+    .allkey {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    .key {
+        max-width: 200px;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
-    .strategy {
-        max-width: 640px;
-    }
-
-    .strategy h3 {
-        font-size: 16pt;
-    }
-
-    .strategybox h4 {
-        font-size: 12pt;
-        min-width: 120px;
-    }
-
-    .strategybox p {
-        padding-left: 10px;
-    }
-
-    .smokeideation {
-        max-width: 1000px;
-        width: 100%;
+    .key img {
+        max-height: 600px;
+        width: auto;
+        max-width: 100%;
     }
 
     .theprogress {
@@ -670,7 +635,29 @@ footer {
         font-weight: 400;
     }
 
-    .fullresearch {
+    .research h3 {
+        color: whitesmoke;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12pt;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+    }
+
+    .alltest {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .alltest img {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .fullprogress {
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: 10vh;
@@ -705,6 +692,7 @@ footer {
     }
 
     .proto {
+        margin-top: 10vh;
         padding: 5vw;
         width: 100%;
         display: flex;
