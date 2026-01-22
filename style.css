@@ -210,10 +210,20 @@ header {
     height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.profile {
+    width: 100%;
+    height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 120px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -247,11 +257,11 @@ header p {
 .icons {
     max-width: 100%;
     padding-bottom: 20px;
-    padding-top: 80px;
-    gap: 20px;
+    padding-top: 60px;
+    gap: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
     flex-wrap: nowrap;
 }
@@ -263,6 +273,33 @@ header p {
     height: auto;
     width: auto;
     box-sizing: border-box;
+}
+
+.connect {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.platform {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.platform img {
+    height: 24px;
+    width: auto;
+}
+
+.platform p {
+    font-size: 12pt;
+}
+
+.platform a {
+    text-transform: none;
 }
 
 .scroll-down-indicator {
@@ -478,7 +515,6 @@ header p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
 }
 
 .cvbutton {
@@ -788,6 +824,10 @@ footer {
     }
 
     header {
+        height: auto;
+    }
+
+    .profile {
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -823,6 +863,36 @@ footer {
         justify-content: center;
         box-sizing: border-box;
         flex-wrap: nowrap;
+    }
+
+    .connect {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 60px;
+    }
+
+    .platform {
+        gap: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .platform img {
+        height: 20px;
+        width: auto;
+    }
+
+    .platform p {
+        font-size: 10pt;
+    }
+
+    .platform a {
+        font-size: 10pt;
     }
 
     .aboutme {
