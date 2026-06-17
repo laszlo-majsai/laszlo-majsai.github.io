@@ -31,7 +31,6 @@
                         <li><a href="#project25">2025</a></li>
                         <li><a href="#project24">2024</a></li>
                         <li><a href="#project20">2020-2022</a></li>
-
                     </ul>
                 </li>
                 <span class="nav-underline"></span>
@@ -71,23 +70,23 @@
     <main>
         <div data-aos="fade-up" data-aos-duration="1000" class="aboutme" id="aboutme">
             <h3>ABOUT ME</h3>
-            <div>
-                <p>I am an Interaction Design MA student at Moholy-Nagy University of Art and Design in Budapest,
-                    Hungary. In this programme, we are studying all the key fundementals of creating digital services,
-                    from research to create a high-fidelity prototype.
-                </p>
-                <p>I graduated as a industrial design engineer for my bachelors. It is a key element for this profession
-                    to be able to make a connection between the customer and our product. I think interaction design has
-                    quite the same intentions as well, just in a different space. However, it is pretty obvious in my
-                    opinion, that the future holds the most opportunities in this field of expertise.
-                </p>
-                <p>I switched to interaction design, because in the digital world you can be creative with almost no
-                    limits. Product designers have to face many factors which force them to differ from their original
-                    concepts. With digital technology there are less and less boundaries and more opportunities.
-                    However, it also means there is always something new for the people to keep up with, and that is why
-                    I think interaction design is important. I want to keep people connected with the constantly
-                    developing technology, to make them see the opportunities in it instead of the concerns.
-                </p>
+            <div class="aboutmebox">
+                <img src="img/aboutme.jpg" alt="aboutme">
+                <div class="aboutmetext">
+                    <p>I am an industrial design engineer who has transitioned to interaction and user experience
+                        design. As
+                        a result, I have gained experience in developing both digital and physical products, from
+                        technical
+                        and artistic perspectives as well.</p>
+                    <p>The reason behind the switch is, that in my previous profession,
+                        I had to deal with numerous factors that forced me to deviate from my original ideas. In the
+                        digital
+                        world, there are fewer limits and more possibilities. However, this also means that people must
+                        constantly keep up with new developments, which is precisely why I consider interaction design
+                        so
+                        important. I want people to stay connected with the ever-evolving technology and, instead of
+                        worrying, see the opportunities it offers.</p>
+                </div>
             </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="manifesto" id="manifesto">
@@ -169,20 +168,42 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="background" id="backgr">
-            <h3>BACKGROUND</h3>
-            <div id="background">
-                <img src="img/background1.png" id="background1" alt="Background1">
-                <div id="background2-3">
-                    <img src="img/background2.png" id="background2" alt="Background2">
-                    <img src="img/background3.png" id="background3" alt="Background3">
+        <div class="background" id="backgr">
+            <h3 data-aos="fade-up" data-aos-duration="1000">BACKGROUND</h3>
+            <div class="bg-sticky-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="bg-sticky-inner">
+                    <div class="bg-content-row">
+                        <div class="backgroundtitles" id="bg-tab-list">
+                            <div class="backgroundtitle bg-tab active" data-index="0">
+                                <img src="img/portfoliologo2-2.png" alt="education">
+                                <div class="backgroundtitleline"></div>
+                                <h6>Educational<br>Background</h6>
+                            </div>
+                            <div class="backgroundtitle bg-tab" data-index="1">
+                                <img src="img/portfoliologo3-3.png" alt="academic">
+                                <div class="backgroundtitleline"></div>
+                                <h6>Academic<br>Achievements</h6>
+                            </div>
+                            <div class="backgroundtitle bg-tab" data-index="2">
+                                <img src="img/portfoliologo1-1.png" alt="work">
+                                <div class="backgroundtitleline"></div>
+                                <h6>Work<br>Experience</h6>
+                            </div>
+                        </div>
+                        <div class="bg-img-container">
+                            <img src="img/education.png" alt="education" class="bg-panel active" id="bg-panel-0">
+                            <img src="img/academic.png" alt="academic" class="bg-panel" id="bg-panel-1">
+                            <img src="img/work.png" alt="work" class="bg-panel" id="bg-panel-2">
+                        </div>
+                    </div>
+                    <nav>
+                        <a href="https://drive.google.com/file/d/1T64obeyH3nsjks73X1qh-E6vJ24_n3zk/view?usp=sharing"
+                            class="cv">
+                            <div class="cvbutton">View Full CV</div>
+                        </a>
+                    </nav>
                 </div>
             </div>
-            <nav>
-                <a href="https://drive.google.com/file/d/1H3IjoUBcjCeBHb_wuwRWq6UpmYn1bI_8/view?usp=sharing" class="cv">
-                    <div class="cvbutton">View Full CV</div>
-                </a>
-            </nav>
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="projectmain" id="project">
             <h3>PROJECTS</h3>
@@ -217,8 +238,7 @@
                                 <img src="img/bkk-main-tp.png" alt="BKK">
                                 <div class="projectinfo">
                                     <h4>App Development for Public Transportation</h4>
-                                    <h5>Integrating a new ticketing system into the official application of BKK...
-                                    </h5>
+                                    <h5>Integrating a new ticketing system into the official application of BKK...</h5>
                                 </div>
                             </a>
                         </div>
@@ -233,6 +253,7 @@
                             </a>
                         </div>
                     </div>
+                </nav>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project24">
                 <div class="year" id="2024">
@@ -257,9 +278,7 @@
                                 <div class="projectinfo">
                                     <h4>Smoke Quitting App</h4>
                                     <h5>Motivating people to quit the harmful habit by the integration of
-                                        gamification
-                                        and
-                                        rewarding...</h5>
+                                        gamification and rewarding...</h5>
                                 </div>
                             </a>
                         </div>
@@ -269,21 +288,12 @@
                                 <div class="projectinfo">
                                     <h4>Newsportal App</h4>
                                     <h5>Combating the spread of misinformation in rural areas with an interactive
-                                        news
-                                        portal focusing on local communities...</h5>
+                                        news portal focusing on local communities...</h5>
                                 </div>
                             </a>
                         </div>
-                        <!--                     <div class="projectbox">
-                        <a href="#display">
-                            <img src="img/displaypb.png" alt="Display">
-                            <div class="projectinfo">
-                                <h4>Product Design Excercise</h4>
-                                <h5>A display concept inspired by the forms of nature...</h5>
-                            </div>
-                        </a>
-                    </div> -->
                     </div>
+                </nav>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" class="project" id="project20">
                 <div class="year" id="2020">
@@ -316,23 +326,13 @@
                                 <img src="img/Infotabla.png" alt="Info">
                                 <div class="projectinfo">
                                     <h4>Information Board for University</h4>
-                                    <h5>The redesign of the faculty’s pictograms...</h5>
+                                    <h5>The redesign of the faculty's pictograms...</h5>
                                 </div>
                             </a>
                         </div>
-                        <!--                     <div class="projectbox">
-                        <a href="#display">
-                            <img src="img/displaypb.png" alt="Display">
-                            <div class="projectinfo">
-                                <h4>Product Design Excercise</h4>
-                                <h5>A display concept inspired by the forms of nature...</h5>
-                            </div>
-                        </a>
-                    </div> -->
                     </div>
+                </nav>
             </div>
-        </div>
-        </nav>
         </div>
     </main>
     <footer>
@@ -446,17 +446,12 @@
     const texts = document.querySelectorAll('.manifesto-text');
     let currentActive = null;
 
-    // Desktop: hover behavior
     if (window.innerWidth > 1024) {
         cards.forEach(card => {
             card.addEventListener('mouseenter', function () {
                 const index = this.getAttribute('data-index');
-
-                // Remove active states
                 cards.forEach(c => c.classList.remove('active'));
                 texts.forEach(t => t.classList.remove('visible'));
-
-                // Add active states
                 this.classList.add('active');
                 document.getElementById(`text-${index}`).classList.add('visible');
             });
@@ -466,27 +461,21 @@
                 texts.forEach(t => t.classList.remove('visible'));
             });
         });
-    }
-    // Mobile: tap/click behavior
-    else {
+    } else {
         cards.forEach(card => {
             card.addEventListener('click', function () {
                 const index = this.getAttribute('data-index');
                 const textElement = document.getElementById(`text-${index}`);
 
-                // If this card is already active, close it
                 if (this.classList.contains('active')) {
                     this.classList.remove('active');
                     textElement.classList.remove('visible');
                     currentActive = null;
                 } else {
-                    // Close previous active
                     if (currentActive !== null) {
                         cards[currentActive].classList.remove('active');
                         document.getElementById(`text-${currentActive}`).classList.remove('visible');
                     }
-
-                    // Open this one
                     this.classList.add('active');
                     textElement.classList.add('visible');
                     currentActive = index;
@@ -494,4 +483,24 @@
             });
         });
     }
+</script>
+<script>
+    (function () {
+        const wrapper = document.querySelector('.bg-sticky-wrapper');
+        const tabs = document.querySelectorAll('.bg-tab');
+        const panels = document.querySelectorAll('.bg-panel');
+        const count = tabs.length;
+
+        function setActive(idx) {
+            tabs.forEach((t, i) => t.classList.toggle('active', i === idx));
+            panels.forEach((p, i) => p.classList.toggle('active', i === idx));
+        }
+
+        window.addEventListener('scroll', function () {
+            const rect = wrapper.getBoundingClientRect();
+            const progress = -rect.top / (rect.height - window.innerHeight);
+            const idx = Math.min(count - 1, Math.max(0, Math.floor(progress * count)));
+            setActive(idx);
+        });
+    })();
 </script>

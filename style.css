@@ -80,7 +80,6 @@
     text-decoration: none;
 }
 
-
 .dropdown-content {
     position: absolute;
     background-color: rgb(35, 35, 35, 0.8);
@@ -134,7 +133,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a {
@@ -204,7 +203,6 @@ h6 {
     line-height: normal;
 }
 
-
 header {
     background-color: #232323;
     height: 100vh;
@@ -214,7 +212,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -248,7 +246,7 @@ header p {
 }
 
 #profile {
-    max-width: 100%;
+    max-width: 40%;
     max-height: 80vh;
     width: auto;
     height: auto;
@@ -347,16 +345,32 @@ header p {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: url("img/backgroundvisual.png");
+    background-image: url("img/backgroundvisual2.png");
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 60%;
+    background-position: bottom right;
+    background-size: 50%;
 }
 
-.aboutme p {
+.aboutmebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutmebox img {
+    max-height: 320px;
+    max-width: 50vw;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutmetext {
     padding-left: 80px;
-    padding-right: 80px;
-    text-align: left;
+    max-height: 320px;
+    min-width: 50vw;
+    box-sizing: border-box;
 }
 
 #manifesto {
@@ -366,10 +380,10 @@ header p {
 .manifesto {
     min-height: 720px;
     padding: 40px 120px 40px 120px;
-    background-image: url("img/backgroundvisual4.png");
+    background-image: url("img/backgroundvisual.png");
     background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 50%;
+    background-position: center center;
+    background-size: 70%;
 }
 
 .manifesto h3 {
@@ -479,43 +493,120 @@ header p {
     padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url("img/backgroundvisual2.png");
+    justify-content: center;
+    background-image: url("img/backgroundvisual4.png");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: left center;
     background-size: 50%;
+    background-attachment: fixed;
+}
+
+.background h3 {
+    font-size: 48pt;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
 }
 
 #backgr {
     scroll-margin-top: 120px;
 }
 
-#background {
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
+.bg-sticky-wrapper {
+    position: relative;
+    height: 300vh;
 }
 
-#background1,
-#background2-3 {
-    max-width: 36vw;
-    min-height: 0;
-    min-width: 0;
-    width: auto;
-    height: auto;
-    padding-bottom: 40px;
-    box-sizing: border-box;
-}
-
-#background2-3 {
+.bg-sticky-inner {
+    position: sticky;
+    top: 8vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.bg-content-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-gap: 120px;
+}
+
+.backgroundtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.backgroundtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    min-width: 480px;
+}
+
+.backgroundtitle.active h6 {
+    color: whitesmoke;
+    font-size: 28pt;
+}
+
+.backgroundtitle img {
+    height: 80px;
+    width: 80px;
+    box-sizing: border-box;
+    object-fit: contain;
+    object-position: left;
+}
+
+.backgroundtitleline {
+    background-color: #E6BE8A;
+    width: 2px;
+    height: 80px;
+}
+
+.backgroundtitle h6 {
+    color: #E6BE8A;
+    font-size: 20pt;
+    margin: 0;
+    text-transform: uppercase;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.bg-img-container {
+    position: relative;
+    width: 480px;
+    min-height: 540px;
+    height: 70vh;
+    align-content: center;
+}
+
+.bg-panel {
+    width: 480px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bg-panel.active {
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
+}
+
+.bg-sticky-inner nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .cvbutton {
@@ -526,13 +617,13 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .cvbutton:hover {
     background-color: whitesmoke;
 }
 
+/* ── PROJECTS ── */
 
 #project {
     scroll-margin-top: 120px;
@@ -733,7 +824,6 @@ footer {
         transition: all 0.3s ease;
     }
 
-
     .nav-links li {
         margin: 20px 0 20px;
     }
@@ -902,9 +992,23 @@ footer {
         background-position: top;
     }
 
-    .aboutme p {
+    .aboutmebox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .aboutmebox img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .aboutmetext {
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
+        max-height: none;
     }
 
     .manifesto {
@@ -958,19 +1062,54 @@ footer {
         background-size: 100%;
     }
 
-    #background {
-        gap: 0;
-        width: 100%;
+    .background h3 {
+        font-size: 32pt;
     }
 
-    #background1,
-    #background2-3 {
-        max-width: 480px;
-        min-height: 0;
+    .bg-sticky-inner {
+        padding: 40px 0;
+    }
+
+    .bg-content-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .backgroundtitle {
         min-width: 0;
+        display: none;
+    }
+
+    .backgroundtitle.active {
+        display: flex;
+    }
+
+    .backgroundtitle h6 {
+        font-size: 16pt;
+    }
+
+    .backgroundtitle.active h6 {
+        font-size: 16pt;
+    }
+
+    .bg-img-container {
         width: 100%;
-        height: 100%;
-        box-sizing: border-box;
+        min-height: 0;
+        height: 56vh;
+    }
+
+    .bg-panel {
+        width: 100%;
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        display: none;
+        transition: none;
+    }
+
+    .bg-panel.active {
+        display: block;
+        position: static;
     }
 
     .year {
